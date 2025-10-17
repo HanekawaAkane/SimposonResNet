@@ -1,0 +1,16 @@
+# Core
+numpy>=1.19,<2
+matplotlib>=3.3,<3.8
+pillow>=8.0,<10
+scikit-learn>=0.24,<1.3
+
+# PyTorch CPU builds (Windows/older pip may need explicit index)
+# If installation fails, use the explicit CPU index below:
+# pip install -r requirements.txt --index-url https://download.pytorch.org/whl/cpu
+torch==1.13.1+cpu
+torchvision==0.14.1+cpu
+
+# NOTE: When using the CPU index, pip will resolve the above +cpu wheels.
+# Alternative (older) combo if 1.13.1 fails:
+# torch==1.9.0+cpu
+# torchvision==0.10.0+cpu
